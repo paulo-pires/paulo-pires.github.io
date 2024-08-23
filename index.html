@@ -1,300 +1,441 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
   <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Paulo Henrique Pires</title>
-
-    <link rel="icon" href="img/favicon%20(2).ico">
-    
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/creative.min.css" rel="stylesheet">
-
+    <meta charset="UTF-8" />
+    <meta name="author" content="Paulo Henrique Pires" />
+    <meta
+      name="description"
+      content="Meu nome é Paulo, desenvolvo interfaces modernas e de alta qualidade, concentrado em performance, animações, responsividade e SEO."
+    />
+    <meta
+      name="keywords"
+      content="sites, web, desenvolvimento, frontend, Paulo Henrique Pires, ui designer, programador, iuricode, front-end, designer, ui, iuri, freelancer, freela, website, portfólio"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#bc2f52" />
+    <meta name="copyright" content="Paulo Henrique Pires 2021" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta
+      property="og:image"
+      content="https://iuricode.com/assets/image/preview.png"
+    />
+    <meta property="og:title" content="Portfólio // Paulo Henrique Pires" />
+    <meta
+      property="og:description"
+      content="Portfólio // Paulo Henrique Pires"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/image/logo-page.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" href="assets/image/logo-page.svg" />
+    <link rel="apple-touch-icon" href="assets/image/logo-page.svg" />
+    <link rel="canonical" href="https://iuricode.com/" />
+    <script src="assets/js/svg-inject.min.js"></script>
+    <title>Portfólio // Paulo Henrique Pires</title>
   </head>
 
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Paulo Henrique Pires</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
+  <body>
+    <header>
+      <div class="grid-layout">
+        <nav>
+          <!-- <img
+            src="assets/image/logo-iuricode.svg"
+            alt="iuricode"
+            width="150px"
+            height="25px"
+          /> -->
+          <img
+            src="assets/image/logo.svg"
+            alt="ìcone iuricode"
+            width="150px"
+            height="25px"
+          />
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li>
+              <a href="#s-home">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Serviços</a>
+            <li>
+              <a href="#s-about">Sobre</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Front-End</a>
+            <li>
+              <a href="#s-experience">Experiencias</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Back-End</a>
+            <li>
+              <a href="#s-projects">Projetos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            <li>
+              <a href="#s-services">Serviços</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
+            <li>
+              <a href="#s-skills">Skills</a>
             </li>
           </ul>
-        </div>
-      </div>
-    </nav>
-
-    <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              <strong>PHP</strong>
-            </h1>
-            <hr>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5">Criação de sites estilo landing page, hotsite, portifolio, vitrini e criação de sistemas avançados</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Saiba mais</a>
-          </div>
-        </div>
+        </nav>
       </div>
     </header>
 
-    <section class="bg-primary" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">Sobre</h2>
-            <hr class="light my-4">
-            <p class="text-faded mb-4">Conhecimento com CSS3, HTML5, JS, ANGULAR, PHP, SYMFONY, LARAVEL, DOCKER</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Serviços</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <main>
+      <section id="s-home">
+        <div class="grid-layout">
+          <div id="home">
+            <div id="home-container-text">
+              <h1 class="delayMediumReveal">
+                Ajudando empresas a desenvolverem 
+                <span>soluções tecnológicas</span> com foco em programação e
+                <span style="color: #bc2f52;">inteligência artificial  </span>
+              </h1>
 
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Serviços</h2>
-            <hr class="my-4">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Sistemas sob demanda</h3>
-              <p class="text-muted mb-0">Criação do sistema desde a analize inicial até a entrega final</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Hospedagem</h3>
-              <p class="text-muted mb-0">O você escolhe a melhor opção</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Relatorio</h3>
-              <p class="text-muted mb-0">Relatirios de acompanhamento do site</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Contato</h3>
-              <p class="text-muted mb-0">Atendimento personalizado</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="p-0" id="portfolio">
-      <div class="container-fluid p-0">
-        <div class="row no-gutters ">
-       
-            <div class="col-lg-4 col-sm-6">
-              <a class="portfolio-box" href="https://minhaclasse.com" target="_blank">
-                <img class="img-fluid" src="img/portfolio/thumbnails/Captura de tela de 2018-06-28 12-19-35.png" alt="">
-                <div class="portfolio-box-caption">
-                  <div class="portfolio-box-caption-content">
-                    <div class="project-category text-faded">
-                      Projeto
-                    </div>
-                    <div class="project-name">
-                      Minha Classe
-                    </div>
-                  </div>
-                </div>
+              <p class="typewriter">
+                Uma mistura de Programação, Desenvolvimento Frontend e
+                habilidade profissional que vão destacar seu produto no mercado.
+                para desenvolver sua solução tecnológica 
+              </p>
+              <a
+                href="https://iuricode.com/contact/"
+                rel="noopener"
+                target="_blank"
+                class="delayExtraBigReveal"
+              >
+                Contate-me
               </a>
+            </div>
+
+            <img
+              src="assets/image/logo.svg"
+              alt="ìcone iuricode"
+              onload="SVGInject(this)"
+              id=""
+              width="700px"
+              height="700px"
+            />
           </div>
+        </div>
+      </section>
+
+      <section id="s-about">
+        <div class="grid-layout">
+          <div>
+            <div id="creator-photo" class="delayMediumReveal"></div>
+            <div>
+              <h4 class="delayMediumReveal">Quem sou</h4>
+              <h2 class="delaySmallReveal">Paulo Henrique Pires</h2>
+              <h3 class="delayMediumReveal">
+                Full-Stack Developer | PHP, JavaScript, Python & IA
+              </h3>
+
+              <p class="delayLargeReveal">
+                Meu nome é Paulo Henrique Pires, desenvolvedor full-stack e com
+                connhecimentos em IA. Comecei em PHP, Symfony, e bancos de dados
+                como MySQL e PostgreSQL, atualmente atuo, focando no
+                desenvolvimento front-end com React e angular e back-end com C#,
+                Node.js, e Python, aplicando soluções de gestão de acesso, visão
+                computacional, e integração de APIs.
+              </p>
+              <nav class="delayLargeReveal">
+                <ul>
+                  <a
+                    href="https://www.instagram.com/mrpaulo.pires/"
+                    rel="noopener"
+                    target="_blank"
+                    ><li>
+                      <img
+                        src="./assets/icons/instagram.svg"
+                        alt="Ícone do Instagram"
+                        onload="SVGInject(this)"
+                      /></li
+                  ></a>
+
+                  <a
+                    href="https://www.linkedin.com/in/paulo-hpires/"
+                    rel="noopener"
+                    target="_blank"
+                    ><li>
+                      <img
+                        src="./assets/icons/linkedin.svg"
+                        rel="noopener"
+                        alt="Ícone do LinkedIn"
+                        onload="SVGInject(this)"
+                      /></li
+                  ></a>
+
+                  <a
+                    href="https://github.com/paulo-pires"
+                    rel="noopener"
+                    target="_blank"
+                    ><li>
+                      <img
+                        src="./assets/icons/github.svg"
+                        alt="Ícone do GitHub"
+                        onload="SVGInject(this)"
+                      /></li
+                  ></a>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-experience">
+        <div class="grid-layout">
+          <h2 class="delaySmallReveal">Experiências <span>.</span></h2>
+          <div id="experience">
+            <div
+              class="option-experience intervalCardReveal"
+              id="experience-company"
+            >
+              <div class="company geosapiens activeExperience">
+                <h3>GeoSapiens</h3>
+              </div>
+              <div class="company convert">
+                <h3>Convert</h3>
+              </div>
+              <div class="company pulses">
+                <h3>Pulses Gupy</h3>
+              </div>
+              <div class="company ani">
+                <h3>A.N.I Sistemas</h3>
+              </div>
+              <div class="company foccos">
+                <h3>Foccos</h3>
+              </div>
+            </div>
+            <div class="text-experience intervalCardReveal">
+              <div>
+                <h4 class="titleExperience">Trainee em Desenvolvimento Web</h4>
+                <p class="dateExperience">Fev 2018 - Fev 2019 (1 ano)</p>
+              </div>
+              <h5 class="companyExperience">GeoSapiens</h5>
+              <p class="changeExperience">
+                Durante meu período como trainee, aprendi e trabalhei com PHP e
+                Symfony, além de desenvolver habilidades em Java e PostgreSQL.
+                Também adquiri conhecimentos em virtualização com Docker e
+                localização geoespacial, que ampliaram minha compreensão de
+                tecnologias de banco de dados e suas aplicações práticas de
+                performance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-projects">
+        <div class="grid-layout">
+          <h2 class="delaySmallReveal">Projetos <span>.</span></h2>
+          <div id="projects">
+            <article class="intervalCardReveal teslabank">
+              <h3>RBAC TS</h3>
+              <p>
+                Pacote npm para controle de acesso baseado em funções, feito em
+                TypeScript.
+              </p>
+
+              <a
+                href="https://github.com/Faberdata-Systems/node-rbac/tree/feature/rbac-nist"
+                rel="noopener"
+                target="_blank"
+                id="teslabank"
+                >Visualizar projeto
+              </a>
+            </article>
+
+            <!-- <article class="intervalCardReveal naped">
+              <h3>Naped</h3>
+              <p>
+                Site de notícias nerd, feito em Next.js, TypeScript e
+                styled-components.
+              </p>
+
+              <a
+                href="https://efront-naped.vercel.app/"
+                rel="noopener"
+                target="_blank"
+                id="naped"
+                >Visualizar projeto
+              </a>
+            </article>
+
+            <article class="intervalCardReveal efront">
+              <h3>eFront</h3>
+              <p>
+                Página de vendas do eFront, feito em HTML, Sass e JavaScript.
+              </p>
+              <a
+                href="https://iuricode.com/efront"
+                rel="noopener"
+                target="_blank"
+                id="efront"
+                >Visualizar projeto
+              </a>
+            </article> -->
+
+            <!-- <article class="intervalCardReveal steam">
+              <h3>Steam</h3>
+              <p>Redesign da Steam, feito em HTML, Sass e JavaScript.</p>
+              <a
+                href="https://efront-steam.vercel.app/"
+                rel="noopener"
+                target="_blank"
+                id="steam"
+                >Visualizar projeto
+              </a>
+            </article> -->
+
+            <article class="intervalCardReveal none">
+              <h3>Em construção...</h3>
+              <p>
+                Pegue o café e espere um pouco, estou desenvolvendo o projeto.
+              </p>
+            </article>
+
+            <article class="intervalCardReveal none">
+              <h3>Em construção...</h3>
+              <p>
+                Pegue o café e espere um pouco, estou desenvolvendo o projeto.
+              </p>
+            </article>
+          </div>
+          <a
+            href="https://github.com/paulo-pires?tab=repositories"
+            rel="noopener"
+            target="_blank"
+            class="delayExtraBigReveal"
+            >Repositórios no GitHub</a
+          >
+        </div>
+      </section>
+
+      <section id="s-services">
+        <div class="grid-layout">
+          <h2 class="delaySmallReveal">Serviços <span>.</span></h2>
+          <div id="services">
+            <article class="intervalCardReveal">
+              
+              <h3>Inteligência Artificial</h3>
+              <p>
+                Desenvolvo soluções de inteligência artificial que automatizam processos, analisam dados e melhoram a tomada de decisões.
+              </p>
+            </article>
+            
+            <article class="intervalCardReveal">
+              
+              <h3>Desenvolvimento</h3>
+              <p>
+                Crio sistemas robustos e escaláveis, incluindo sites profissionais, blogs, portfólios, landing pages e e-commerce.
+              </p>
+            </article>
+            
+            <article class="intervalCardReveal">
+              
+              <h3>Integração</h3>
+              <p>
+                Integro diferentes sistemas e APIs para garantir que todas as partes do seu negócio funcionem harmoniosamente.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="s-skills">
+        <div class="grid-layout">
+          <div id="skills">
+            <article id="skills-text">
+              <h2 class="delaySmallReveal">Conhecimentos <span>.</span></h2>
+              <p class="delayMediumReveal changeDescription">
+                *passe o cursor do mouse no card para ler*
+              </p>
+            </article>
+
+            <div id="skills-cards">
+              <article class="python intervalCardReveal">
+                <i style="color: rgb(152, 109, 255);width: 60px;height: 60px;"  class='fab fa-python'></i>
+              </article>
+              <article class="angular intervalCardReveal">
+                <i style="color: rgb(152, 109, 255);width: 60px;height: 60px;"  class='fab fa-angular'></i>
+              </article>
+              <article class="php intervalCardReveal">
+                <i style="color: rgb(152, 109, 255);width: 60px;height: 60px;"  class='fab fa-php'></i>
+              </article>
+              <article class="js intervalCardReveal">
+                <img
+                  src="assets/icons/javascript.svg"
+                  width="60px"
+                  height="60px"
+                  alt="ícone do javascript"
+                />
+              </article>
+              <article class="react intervalCardReveal">
+                <img
+                  src="assets/icons/react.svg"
+                  width="60px"
+                  height="60px"
+                  alt="ícone do react"
+                />
+              </article>
+              <article class="next intervalCardReveal">
+                <img
+                  src="assets/icons/next.svg"
+                  width="60px"
+                  height="60px"
+                  alt="ícone do next"
+                />
+              </article>
+              <article class="tailwind intervalCardReveal">
+                <img
+                  src="assets/icons/tailwindcss.svg"
+                  width="60px"
+                  height="60px"
+                  alt="ícone do tailwind"
+                />
+              </article>
+
+              <article class="typescript intervalCardReveal">
+                <img
+                  src="assets/icons/typescript.svg"
+                  width="60px"
+                  height="60px"
+                  alt="ícone do typescript"
+                />
+              </article>
+
+             
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="grid-layout">
+          <p>
+            Copyright © 2024 
+            <a href="https://paulo-pires.github.io/" rel="noopener" target="_blank">
+              paulo-pires.github.io
+            </a>
+            Todos os direitos reservados.
+          </p>
+
           
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="http://fotofonica.com.br/" target="_blank">
-              <img class="img-fluid" src="img/portfolio/thumbnails/Captura de tela de 2018-06-28 12-32-28.png" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Projeto
-                  </div>
-                  <div class="project-name">
-                    Fotofonica
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="http://sianta.com.br/" target="_blank">
-              <img class="img-fluid" src="img/portfolio/thumbnails/Captura de tela de 2018-06-28 12-27-04.png" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Projeto
-                  </div>
-                  <div class="project-name">
-                    Sianta
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="http://pequeninar.com.br/" target="_blank">
-              <img class="img-fluid" src="img/portfolio/thumbnails/Captura de tela de 2018-06-28 12-30-54.png" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Projeto
-                  </div>
-                  <div class="project-name">
-                    Pequeninar
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="http://www.veber.ind.br/">
-              <img class="img-fluid" src="img/portfolio/thumbnails/Captura de tela de 2018-06-28 12-44-15.png" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Projeto
-                  </div>
-                  <div class="project-name">
-                    Veber
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="http://devolva.me/">
-              <img class="img-fluid" src="img/portfolio/thumbnails/Captura de tela de 2018-06-28 12-17-46.png" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Projeto
-                  </div>
-                  <div class="project-name">
-                    Devolva me
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
         </div>
-      </div>
-    </section>
+      </footer>
+    </main>
 
-<!--     <section class="bg-dark text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
-      </div>
-    </section> -->
-
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Vamos entrar em contato!</h2>
-            <hr class="my-4">
-            <p class="mb-5">Pronto para começar seu próximo projeto conosco? Isso é ótimo! Ligue para nós ou envie-nos um e-mail e entraremos em contato o mais breve possível!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-            <p>(47)99909-3179</p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-            <p>
-              <a href="mailto:paulo.pires@edu.univali.br">paulo.pires@edu.univali.br</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
-    <!-- Hotjar Tracking Code for https://paulo-pires.github.io/ -->
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:924308,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
-    <script type="text/javascript">
-      window.smartlook||(function(d) {
-      var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
-      var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
-      c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
-      })(document);
-      smartlook('init', 'dce46382f9924132501244677bc50a612d41e667');
-    </script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
   </body>
-
 </html>
