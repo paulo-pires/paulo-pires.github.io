@@ -49,18 +49,13 @@
     <header>
       <div class="grid-layout">
         <nav>
-          <!-- <img
-            src="assets/image/logo-iuricode.svg"
-            alt="iuricode"
-            width="150px"
-            height="25px"
-          /> -->
           <img
             src="assets/image/logo.svg"
             alt="ìcone iuricode"
             width="150px"
             height="25px"
           />
+         
           <div class="mobile-menu">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -86,6 +81,10 @@
               <a href="#s-skills">Skills</a>
             </li>
           </ul>
+          <div class="language-selector">
+            <button id="pt-br" onclick="changeLanguage('pt-br')">PT</button>
+            <button id="en" onclick="changeLanguage('en')">EN</button>
+          </div>
         </nav>
       </div>
     </header>
@@ -95,18 +94,18 @@
         <div class="grid-layout">
           <div id="home">
             <div id="home-container-text">
-              <h1 class="delayMediumReveal">
+              <h1 id="home-title" class="delayMediumReveal">
                 Ajudando empresas a desenvolverem 
                 <span>soluções tecnológicas</span> com foco em programação e
-                <span style="color: #bc2f52;">inteligência artificial  </span>
+                <span style="color: #bc2f52;">inteligência artificial</span>
               </h1>
-
-              <p class="typewriter">
+              <p id="home-description" class="typewriter">
                 Uma mistura de Programação, Desenvolvimento Frontend e
                 habilidade profissional que vão destacar seu produto no mercado.
                 para desenvolver sua solução tecnológica 
               </p>
               <a
+                id="contact-me"
                 href="https://iuricode.com/contact/"
                 rel="noopener"
                 target="_blank"
@@ -115,7 +114,6 @@
                 Contate-me
               </a>
             </div>
-
             <img
               src="assets/image/logo.svg"
               alt="ìcone iuricode"
@@ -133,59 +131,21 @@
           <div>
             <div id="creator-photo" class="delayMediumReveal"></div>
             <div>
-              <h4 class="delayMediumReveal">Quem sou</h4>
-              <h2 class="delaySmallReveal">Paulo Henrique Pires</h2>
+              <h4 id="about-title" class="delayMediumReveal">Quem sou</h4>
+              <h2 id="about-name" class="delaySmallReveal">Paulo Henrique Pires</h2>
               <h3 class="delayMediumReveal">
                 Full-Stack Developer | PHP, JavaScript, Python & IA
               </h3>
-
-              <p class="delayLargeReveal">
+              <p id="about-description" class="delayLargeReveal">
                 Meu nome é Paulo Henrique Pires, desenvolvedor full-stack e com
-                connhecimentos em IA. Comecei em PHP, Symfony, e bancos de dados
+                conhecimentos em IA. Comecei em PHP, Symfony, e bancos de dados
                 como MySQL e PostgreSQL, atualmente atuo, focando no
-                desenvolvimento front-end com React e angular e back-end com C#,
+                desenvolvimento front-end com React e Angular e back-end com C#,
                 Node.js, e Python, aplicando soluções de gestão de acesso, visão
                 computacional, e integração de APIs.
               </p>
               <nav class="delayLargeReveal">
-                <ul>
-                  <a
-                    href="https://www.instagram.com/mrpaulo.pires/"
-                    rel="noopener"
-                    target="_blank"
-                    ><li>
-                      <img
-                        src="./assets/icons/instagram.svg"
-                        alt="Ícone do Instagram"
-                        onload="SVGInject(this)"
-                      /></li
-                  ></a>
-
-                  <a
-                    href="https://www.linkedin.com/in/paulo-hpires/"
-                    rel="noopener"
-                    target="_blank"
-                    ><li>
-                      <img
-                        src="./assets/icons/linkedin.svg"
-                        rel="noopener"
-                        alt="Ícone do LinkedIn"
-                        onload="SVGInject(this)"
-                      /></li
-                  ></a>
-
-                  <a
-                    href="https://github.com/paulo-pires"
-                    rel="noopener"
-                    target="_blank"
-                    ><li>
-                      <img
-                        src="./assets/icons/github.svg"
-                        alt="Ícone do GitHub"
-                        onload="SVGInject(this)"
-                      /></li
-                  ></a>
-                </ul>
+                <!-- Links de navegação -->
               </nav>
             </div>
           </div>
@@ -194,7 +154,7 @@
 
       <section id="s-experience">
         <div class="grid-layout">
-          <h2 class="delaySmallReveal">Experiências <span>.</span></h2>
+          <h2 id="experience-title" class="delaySmallReveal">Experiências <span>.</span></h2>
           <div id="experience">
             <div
               class="option-experience intervalCardReveal"
@@ -218,11 +178,10 @@
             </div>
             <div class="text-experience intervalCardReveal">
               <div>
-                <h4 class="titleExperience">Trainee em Desenvolvimento Web</h4>
                 <p class="dateExperience">Fev 2018 - Fev 2019 (1 ano)</p>
               </div>
               <h5 class="companyExperience">GeoSapiens</h5>
-              <p class="changeExperience">
+              <p id="experience-description" class="changeExperience">
                 Durante meu período como trainee, aprendi e trabalhei com PHP e
                 Symfony, além de desenvolver habilidades em Java e PostgreSQL.
                 Também adquiri conhecimentos em virtualização com Docker e
@@ -237,73 +196,23 @@
 
       <section id="s-projects">
         <div class="grid-layout">
-          <h2 class="delaySmallReveal">Projetos <span>.</span></h2>
+          <h2 id="projects-title" class="delaySmallReveal">Projetos <span>.</span></h2>
           <div id="projects">
             <article class="intervalCardReveal teslabank">
               <h3>RBAC TS</h3>
               <p>
-                Pacote npm para controle de acesso baseado em funções, feito em
+                Página de vendas do RBAC TS, feito em HTML, Sass e
                 TypeScript.
               </p>
-
               <a
-                href="https://github.com/Faberdata-Systems/node-rbac/tree/feature/rbac-nist"
+                href="#"
                 rel="noopener"
                 target="_blank"
-                id="teslabank"
-                >Visualizar projeto
+                class="delayExtraBigReveal"
+              >
+                Visualizar projeto
               </a>
             </article>
-
-            <!-- <article class="intervalCardReveal naped">
-              <h3>Naped</h3>
-              <p>
-                Site de notícias nerd, feito em Next.js, TypeScript e
-                styled-components.
-              </p>
-
-              <a
-                href="https://efront-naped.vercel.app/"
-                rel="noopener"
-                target="_blank"
-                id="naped"
-                >Visualizar projeto
-              </a>
-            </article>
-
-            <article class="intervalCardReveal efront">
-              <h3>eFront</h3>
-              <p>
-                Página de vendas do eFront, feito em HTML, Sass e JavaScript.
-              </p>
-              <a
-                href="https://iuricode.com/efront"
-                rel="noopener"
-                target="_blank"
-                id="efront"
-                >Visualizar projeto
-              </a>
-            </article> -->
-
-            <!-- <article class="intervalCardReveal steam">
-              <h3>Steam</h3>
-              <p>Redesign da Steam, feito em HTML, Sass e JavaScript.</p>
-              <a
-                href="https://efront-steam.vercel.app/"
-                rel="noopener"
-                target="_blank"
-                id="steam"
-                >Visualizar projeto
-              </a>
-            </article> -->
-
-            <article class="intervalCardReveal none">
-              <h3>Em construção...</h3>
-              <p>
-                Pegue o café e espere um pouco, estou desenvolvendo o projeto.
-              </p>
-            </article>
-
             <article class="intervalCardReveal none">
               <h3>Em construção...</h3>
               <p>
@@ -316,34 +225,30 @@
             rel="noopener"
             target="_blank"
             class="delayExtraBigReveal"
-            >Repositórios no GitHub</a
           >
+            Repositórios no GitHub
+          </a>
         </div>
       </section>
 
       <section id="s-services">
         <div class="grid-layout">
-          <h2 class="delaySmallReveal">Serviços <span>.</span></h2>
+          <h2 id="services-title" class="delaySmallReveal">Serviços <span>.</span></h2>
           <div id="services">
             <article class="intervalCardReveal">
-              
-              <h3>Inteligência Artificial</h3>
+              <h3 id="services-ai">Inteligência Artificial</h3>
               <p>
                 Desenvolvo soluções de inteligência artificial que automatizam processos, analisam dados e melhoram a tomada de decisões.
               </p>
             </article>
-            
             <article class="intervalCardReveal">
-              
-              <h3>Desenvolvimento</h3>
+              <h3 id="services-development">Desenvolvimento</h3>
               <p>
                 Crio sistemas robustos e escaláveis, incluindo sites profissionais, blogs, portfólios, landing pages e e-commerce.
               </p>
             </article>
-            
             <article class="intervalCardReveal">
-              
-              <h3>Integração</h3>
+              <h3 id="services-integration">Integração de Sistemas</h3>
               <p>
                 Integro diferentes sistemas e APIs para garantir que todas as partes do seu negócio funcionem harmoniosamente.
               </p>
@@ -356,12 +261,11 @@
         <div class="grid-layout">
           <div id="skills">
             <article id="skills-text">
-              <h2 class="delaySmallReveal">Conhecimentos <span>.</span></h2>
-              <p class="delayMediumReveal changeDescription">
+              <h2 id="skills-title" class="delaySmallReveal">Conhecimentos <span>.</span></h2>
+              <p id="skills-description" class="delayLargeReveal changeDescription">
                 *passe o cursor do mouse no card para ler*
               </p>
             </article>
-
             <div id="skills-cards">
               <article class="python intervalCardReveal">
                 <i style="color: rgb(152, 109, 255);width: 60px;height: 60px;"  class='fab fa-python'></i>
@@ -422,20 +326,60 @@
 
       <footer>
         <div class="grid-layout">
-          <p>
+          <p id="footer-text">
             Copyright © 2024 
             <a href="https://paulo-pires.github.io/" rel="noopener" target="_blank">
               paulo-pires.github.io
             </a>
             Todos os direitos reservados.
           </p>
-
-          
         </div>
       </footer>
     </main>
 
     <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
     <script type="module" src="assets/js/main.js"></script>
+    <script>
+      const translations = {
+        'pt-br': {
+          homeTitle: 'Ajudando empresas a desenvolverem <span>soluções tecnológicas</span> com foco em programação e <span style="color: #bc2f52;">inteligência artificial</span>',
+          homeDescription: 'Uma mistura de Programação, Desenvolvimento Frontend e habilidade profissional que vão destacar seu produto no mercado. para desenvolver sua solução tecnológica',
+          contactMe: 'Contate-me',
+          aboutTitle: 'Quem sou',
+          aboutName: 'Paulo Henrique Pires',
+          aboutDescription: 'Meu nome é Paulo Henrique Pires, desenvolvedor full-stack e com conhecimentos em IA. Comecei em PHP, Symfony, e bancos de dados como MySQL e PostgreSQL, atualmente atuo, focando no desenvolvimento front-end com React e Angular e back-end com C#, Node.js, e Python, aplicando soluções de gestão de acesso, visão computacional, e integração de APIs.',
+          experienceTitle: 'Experiências <span>.</span>',
+          experienceDescription: 'Durante meu período como trainee, aprendi e trabalhei com PHP e Symfony, além de desenvolver habilidades em Java e PostgreSQL. Também adquiri conhecimentos em virtualização com Docker e localização geoespacial, que ampliaram minha compreensão de tecnologias de banco de dados e suas aplicações práticas de performance.',
+          projectsTitle: 'Projetos <span>.</span>',
+          servicesTitle: 'Serviços <span>.</span>',
+          servicesAI: 'Desenvolvo soluções de inteligência artificial que automatizam processos, analisam dados e melhoram a tomada de decisões.',
+          servicesDevelopment: 'Crio sistemas robustos e escaláveis, incluindo sites profissionais, blogs, portfólios, landing pages e e-commerce.',
+          servicesIntegration: 'Integro diferentes sistemas e APIs para garantir que todas as partes do seu negócio funcionem harmoniosamente.',
+          skillsTitle: 'Conhecimentos <span>.</span>',
+          skillsDescription: '*passe o cursor do mouse no card para ler*',
+          footerText: 'Copyright © 2024 <a href="https://paulo-pires.github.io/" rel="noopener" target="_blank">paulo-pires.github.io</a> Todos os direitos reservados.'
+        },
+        'en': {
+          homeTitle: 'Helping companies develop <span>technological solutions</span> focused on programming and <span style="color: #bc2f52;">artificial intelligence</span>',
+          homeDescription: 'A mix of Programming, Frontend Development, and professional skills that will highlight your product in the market. to develop your technological solution',
+          contactMe: 'Contact me',
+          aboutTitle: 'About me',
+          aboutName: 'Paulo Henrique Pires',
+          aboutDescription: 'My name is Paulo Henrique Pires, a full-stack developer with knowledge in AI. I started with PHP, Symfony, and databases like MySQL and PostgreSQL. Currently, I focus on front-end development with React and Angular and back-end with C#, Node.js, and Python, applying solutions for access management, computer vision, and API integration.',
+          experienceTitle: 'Experiences <span>.</span>',
+          experienceDescription: 'During my trainee period, I learned and worked with PHP and Symfony, as well as developed skills in Java and PostgreSQL. I also gained knowledge in virtualization with Docker and geospatial localization, which expanded my understanding of database technologies and their practical performance applications.',
+          projectsTitle: 'Projects <span>.</span>',
+          servicesTitle: 'Services <span>.</span>',
+          servicesAI: 'I develop artificial intelligence solutions that automate processes, analyze data, and improve decision-making.',
+          servicesDevelopment: 'I create robust and scalable systems, including professional websites, blogs, portfolios, landing pages, and e-commerce.',
+          servicesIntegration: 'I integrate different systems and APIs to ensure that all parts of your business work harmoniously.',
+          skillsTitle: 'Skills <span>.</span>',
+          skillsDescription: '*hover over the card to read*',
+          footerText: 'Copyright © 2024 <a href="https://paulo-pires.github.io/" rel="noopener" target="_blank">paulo-pires.github.io</a> All rights reserved.'
+        }
+      };
+
+      
+    </script>
   </body>
 </html>
