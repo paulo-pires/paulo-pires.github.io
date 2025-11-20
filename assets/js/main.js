@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function updateDescriptions() {
     hoverChangeExperience(".geosapiens", 'geosapiens', lang);
+    hoverChangeExperience(".noxie", 'noxie', lang);
     hoverChangeExperience(".convert", 'convert', lang);
     hoverChangeExperience(".pulses", 'pulses', lang);
     hoverChangeExperience(".ani", 'ani', lang);
