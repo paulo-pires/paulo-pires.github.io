@@ -47,10 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
     hoverChangeDescription(".angular", 'angular', lang);
     hoverChangeDescription(".js", 'js', lang);
     hoverChangeDescription(".react", 'react', lang);
-     hoverChangeDescription(".php", 'php', lang);
-    hoverChangeDescription(".next", 'next', lang);
-    hoverChangeDescription(".tailwind", 'tailwind', lang);
-    hoverChangeDescription(".typescript", 'typescript', lang);
+    //  hoverChangeDescription(".php", 'php', lang);
+    // hoverChangeDescription(".next", 'next', lang);
+    // hoverChangeDescription(".tailwind", 'tailwind', lang);
+    // hoverChangeDescription(".typescript", 'typescript', lang);
   }
 
   // Inicializa as descrições
