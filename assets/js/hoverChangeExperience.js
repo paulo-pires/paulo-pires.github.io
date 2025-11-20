@@ -1,96 +1,107 @@
-const experiences = {
-  'pt-br': {
-    geosapiens: {
-      description: `Durante meu período como trainee, aprendi e trabalhei com PHP e Symfony, além de desenvolver habilidades em Java e PostgreSQL. Também adquiri conhecimentos em virtualização com Docker e localização geoespacial, que ampliaram minha compreensão de tecnologias de banco de dados e suas aplicações práticas de performance.`,
-      title: "Trainee em Desenvolvimento Web",
-      company: "GeoSapiens",
-      date: "Fev 2018 - Fev 2019 (1 ano)"
-    },
-    convert: {
-      description: `Trabalhei na Convert, onde me concentrei na criação de integrações API para plataformas de e-commerce com Magento. Meu principal objetivo era melhorar o desempenho das integrações, garantindo uma comunicação eficiente entre os sistemas e otimizando a performance geral das plataformas.`,
-      title: "Desenvolvedor de Integrações API",
-      company: "Convert",
-      date: "Mar 2019 - Mar 2020 (1 ano)"
-    },
-    pulses: {
-      description: `Implementei soluções de OLTP com SingleStore e MemSQL para otimização de bancos de dados, realizei melhorias no código PHP Laravel e implementei testes automatizados com Cypress.`,
-      title: "Consultor de melhoria de performance",
-      company: "Pulses Gupy",
-      date: "Abr 2020 - Abr 2021 (1 ano)"
-    },
-    ani: {
-      description: `Trabalhei como gerenciamento de frotas, onde apliquei meu conhecimento full stack em NoSQL, desenvolvi back-end em Node.js, front-end em Angular, e criei aplicativos móveis usando Angular e Cordova para solucionar desafios da empresa.`,
-      title: "Desenvolvedor Full Stack",
-      company: "A.N.I Sistemas",
-      date: "Mai 2021 - Mai 2023 (2 anos)"
-    },
-    foccos: {
-      description: `Atualmente, estou em uma empresa na área de gestão e controle de acesso, atuando como desenvolvedor full-stack. Aplicando meus conhecimentos em back-end com Next.js e front-end com React, além de trabalhar com soluções de visão computacional e inteligência artificial utilizando Python. Também gerencio um servidor Windows com banco de dados SQL Server.`,
-      title: "Desenvolvedor Full Stack",
-      company: "Foccos",
-      date: "Jun 2023 - Presente"
-    }
-  },
-  'en': {
-    geosapiens: {
-      description: `During my trainee period, I learned and worked with PHP and Symfony, as well as developed skills in Java and PostgreSQL. I also gained knowledge in virtualization with Docker and geospatial localization, which expanded my understanding of database technologies and their practical performance applications.`,
-      title: "Web Development Trainee",
-      company: "GeoSapiens",
-      date: "Feb 2018 - Feb 2019 (1 year)"
-    },
-    convert: {
-      description: `I worked at Convert, where I focused on creating API integrations for e-commerce platforms with Magento. My main goal was to improve the performance of integrations, ensuring efficient communication between systems and optimizing the overall performance of the platforms.`,
-      title: "API Integrations Developer",
-      company: "Convert",
-      date: "Mar 2019 - Mar 2020 (1 year)"
-    },
-    pulses: {
-      description: `I implemented OLTP solutions with SingleStore and MemSQL for database optimization, made improvements to PHP Laravel code, and implemented automated tests with Cypress.`,
-      title: "Performance Improvement Consultant",
-      company: "Pulses Gupy",
-      date: "Apr 2020 - Apr 2021 (1 year)"
-    },
-    ani: {
-      description: `I worked in fleet management, where I applied my full stack knowledge in NoSQL, developed back-end in Node.js, front-end in Angular, and created mobile applications using Angular and Cordova to solve company challenges.`,
-      title: "Full Stack Developer",
-      company: "A.N.I Sistemas",
-      date: "May 2021 - May 2023 (2 years)"
-    },
-    foccos: {
-      description: `Currently, I am at a company in the area of management and access control, working as a full-stack developer. Applying my knowledge in back-end with Next.js and front-end with React, as well as working with computer vision and artificial intelligence solutions using Python. I also manage a Windows server with SQL Server database.`,
-      title: "Full Stack Developer",
-      company: "Foccos",
-      date: "Jun 2023 - Present"
-    }
-  }
-};
-
 export function hoverChangeExperience(nameCard, key, lang = 'pt-br') {
+  const experiences = {
+    'pt-br': {
+      foccos: {
+        title: "Foccos Tecnologia",
+        company: "Foccos Tecnologia",
+        date: "Jun 2023 - Atualmente",
+        description: "Atuo no desenvolvimento de soluções de missão crítica para Logística Portuária Alfandegada. Desenvolvo sistemas de Visão Computacional (LPR) e middlewares de integração com hardware (Balanças, Sensores, Biometria), garantindo a automação de pátios e a conformidade fiscal junto à Receita Federal com Python e SQL Server."
+      },
+      noxie: {
+        title: "Noxie",
+        company: "Noxie",
+        date: "Mai 2022 - Jun 2023",
+        description: "Liderei o desenvolvimento de soluções de Reconhecimento Facial Mobile e OCR utilizando Python, OpenCV e face-api (Node.js). Arquitetei APIs de alta performance com FastAPI e gerenciei infraestrutura Docker e Oracle DB para validação de identidade digital."
+      },
+      ani: {
+        title: "A.N.I Sistemas",
+        company: "A.N.I Sistemas",
+        date: "Mai 2021 - Mai 2023",
+        description: "Desenvolvi sistemas de monitoramento de frotas e geolocalização. Implementei algoritmos de Geofencing (cercas virtuais), alertas de desvio de rota e manipulação de polígonos complexos em mapas utilizando Node.js e bancos NoSQL."
+      },
+      pulses: {
+        title: "Pulses Gupy",
+        company: "Pulses Gupy",
+        date: "Abr 2020 - Abr 2021",
+        description: "Atuei na Engenharia de Performance e Dados. Otimizei bancos de dados OLTP (SingleStore) e queries complexas. Trabalhei com Python (Flask) em microserviços de Machine Learning (NLP) e automação de testes."
+      },
+      convert: {
+        title: "Convertter",
+        company: "Convertter",
+        date: "Mar 2019 - Mar 2020",
+        description: "Desenvolvedor Full-stack focado em E-commerce de alto tráfego (Magento). Atuei na otimização de performance, configuração de servidores Linux e integração de APIs de pagamento e logística."
+      },
+      geosapiens: {
+        title: "GeoSapiens",
+        company: "GeoSapiens",
+        date: "Fev 2018 - Fev 2019",
+        description: "Desenvolvimento Back-end em soluções de Cartografia Digital. Trabalhei com PHP Symfony, Java e PostgreSQL, manipulando dados espaciais e camadas de mapas."
+      }
+    },
+    'en': {
+      foccos: {
+        title: "Foccos Tecnologia",
+        company: "Foccos Tecnologia",
+        date: "Jun 2023 - Present",
+        description: "Developing mission-critical solutions for Customs Port Logistics. Building Computer Vision systems (LPR) and middleware for hardware integration (Scales, Sensors, Biometrics), ensuring yard automation and fiscal compliance using Python and SQL Server."
+      },
+      noxie: {
+        title: "Noxie",
+        company: "Noxie",
+        date: "May 2022 - Jun 2023",
+        description: "Led the development of Mobile Facial Recognition and OCR solutions using Python, OpenCV, and face-api (Node.js). Architected high-performance APIs with FastAPI and managed Docker infrastructure and Oracle DB."
+      },
+      ani: {
+        title: "A.N.I Sistemas",
+        company: "A.N.I Sistemas",
+        date: "May 2021 - May 2023",
+        description: "Developed fleet monitoring and geolocation systems. Implemented Geofencing algorithms, route deviation alerts, and polygon manipulation on maps using Node.js and NoSQL databases."
+      },
+      pulses: {
+        title: "Pulses Gupy",
+        company: "Pulses Gupy",
+        date: "Apr 2020 - Apr 2021",
+        description: "Worked on Performance Engineering and Data. Optimized OLTP databases (SingleStore) and complex queries. Worked with Python (Flask) on Machine Learning (NLP) microservices."
+      },
+      convert: {
+        title: "Convertter",
+        company: "Convertter",
+        date: "Mar 2019 - Mar 2020",
+        description: "Full-stack developer focused on high-traffic E-commerce (Magento). Worked on performance optimization, Linux server configuration, and API integrations."
+      },
+      geosapiens: {
+        title: "GeoSapiens",
+        company: "GeoSapiens",
+        date: "Feb 2018 - Feb 2019",
+        description: "Back-end development for Digital Cartography solutions. Worked with PHP Symfony, Java, and PostgreSQL, handling spatial data and map layers."
+      }
+    }
+  };
+
   const varChangeDescription = document.querySelector(".changeExperience");
   const varCompanyExperience = document.querySelector(".companyExperience");
   const varDateExperience = document.querySelector(".dateExperience");
-  
-  if (!varChangeDescription  || !varCompanyExperience || !varDateExperience) {
-    console.error("One or more elements not found in the DOM.");
-    return;
+  const card = document.querySelector(nameCard);
+
+  if (!varChangeDescription || !varCompanyExperience || !varDateExperience || !card) {
+    return; // Evita erros se o elemento não existir
   }
 
-  document.querySelector(nameCard).addEventListener("click", () => {
-    varChangeDescription.innerHTML = experiences[lang][key].description;
-    varCompanyExperience.innerHTML = experiences[lang][key].company;
-    varDateExperience.innerHTML = experiences[lang][key].date;
-  });
-}
-
-const header = document.getElementById("experience-company");
-const btns = header.getElementsByClassName("company");
-
-for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    const current = document.getElementsByClassName("activeExperience");
-    if (current.length > 0) {
-      current[0].className = current[0].className.replace(" activeExperience", "");
+  card.addEventListener("click", () => {
+    // 1. Verifica se a chave existe nos dados antes de trocar
+    if (experiences[lang][key]) {
+      varChangeDescription.innerHTML = experiences[lang][key].description;
+      varCompanyExperience.innerHTML = experiences[lang][key].company;
+      varDateExperience.innerHTML = experiences[lang][key].date;
     }
-    this.className += " activeExperience";
+
+    // 2. Lógica de troca de classe "Active" (Visual)
+    // Remove a classe de quem estiver ativo no momento
+    const currentActive = document.querySelector(".activeExperience");
+    if (currentActive) {
+      currentActive.classList.remove("activeExperience");
+    }
+    // Adiciona a classe no card que foi clicado
+    card.classList.add("activeExperience");
   });
 }
