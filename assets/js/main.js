@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
     hoverChangeDescription(".docker", 'docker', lang); // ADICIONADO
     hoverChangeDescription(".database", 'database', lang); // ADICIONADO
     hoverChangeDescription(".angular", 'angular', lang);
-    hoverChangeDescription(".php", 'php', lang);
     hoverChangeDescription(".js", 'js', lang);
     hoverChangeDescription(".react", 'react', lang);
+     hoverChangeDescription(".php", 'php', lang);
     hoverChangeDescription(".next", 'next', lang);
     hoverChangeDescription(".tailwind", 'tailwind', lang);
     hoverChangeDescription(".typescript", 'typescript', lang);
