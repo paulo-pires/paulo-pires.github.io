@@ -42,6 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
     hoverChangeExperience(".foccos", 'foccos', lang);
 
     hoverChangeDescription(".python", 'python', lang);
+    hoverChangeDescription(".docker", 'docker', lang); // ADICIONADO
+    hoverChangeDescription(".database", 'database', lang); // ADICIONADO
     hoverChangeDescription(".angular", 'angular', lang);
     hoverChangeDescription(".php", 'php', lang);
     hoverChangeDescription(".js", 'js', lang);
