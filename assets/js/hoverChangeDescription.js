@@ -2,6 +2,8 @@ const descriptions = {
   'pt-br': {
     python: "Python é uma linguagem de programação de alto nível, conhecida por sua simplicidade e legibilidade, amplamente utilizada em desenvolvimento web, ciência de dados, automação e muito mais.",
     angular: "Angular é uma plataforma e framework para construir aplicações web dinâmicas e robustas, utilizando TypeScript como linguagem principal.",
+    docker: "Docker é essencial para containerização das minhas aplicações, garantindo deploy seguro e escalável.",
+    database: "Experiência sólida com SQL Server, PostgreSQL, Oracle e bancos vetoriais para aplicações complexas.",
     php: "PHP é uma linguagem de script do lado do servidor, especialmente adequada para desenvolvimento web e pode ser embutida em HTML.",
     js: "JavaScript é uma linguagem de programação versátil que permite a criação de elementos dinâmicos e interativos em páginas web.",
     react: "React é uma biblioteca JavaScript para construção de interfaces de usuário, baseada em componentes reutilizáveis.",
@@ -12,6 +14,8 @@ const descriptions = {
   'en': {
     python: "Python is a high-level programming language known for its simplicity and readability, widely used in web development, data science, automation, and more.",
     angular: "Angular is a platform and framework for building dynamic and robust web applications, using TypeScript as the main language.",
+    docker: "Docker is essential for containerizing my applications, ensuring secure and scalable deployment.",
+    database: "Solid experience with SQL Server, PostgreSQL, Oracle, and vector databases for complex applications.",
     php: "PHP is a server-side scripting language especially suited for web development and can be embedded into HTML.",
     js: "JavaScript is a versatile programming language that enables the creation of dynamic and interactive elements on web pages.",
     react: "React is a JavaScript library for building user interfaces, based on reusable components.",
